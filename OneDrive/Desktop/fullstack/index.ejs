@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WEATHER FOR U</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://wallpapers.com/images/hd/1080p-winter-background-1866-x-1050-9lvpix3dpz5x1swz.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: black; /* Change text color to black */
+      margin-top: 10px;
+    }
+
+    p {
+      color: #666;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 10px; /* Add a gap between buttons */
+    }
+
+    .button {
+      width: 120px; /* Set a fixed width for both buttons */
+      padding: 10px;
+      background-color: #4CAF50; /* Change button color to green */
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      margin: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for hover effect */
+      text-align: center; /* Center the text horizontally */
+      font-size: 16px; /* Adjust the font size */
+    }
+
+    .button:hover {
+      background-color: #45a049; /* Darker green color on hover */
+      transform: scale(1.05); /* Scale up the button slightly on hover */
+    }
+  </style>
+</head>
+<body>
+  <h1>WEATHER FOR U</h1>
+  
+  <div class="button-container">
+    <a href="/register" class="button">Register</a>
+    <a href="/login" class="button">Login</a>
+  </div>
+</body>
+</html>
