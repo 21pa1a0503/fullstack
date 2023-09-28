@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Information</title>
+  <style>
+    /* Center align content */
+    body {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://swisscognitive.ch/wp-content/uploads/2023/07/The_AI_ANDY_FITZE-scaled.jpg'); /* Replace 'path-to-your-image.jpg' with the actual image file path */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    h1 {
+      margin-top: 20px;
+    }
+
+    /* Style weather information */
+    .weather-info {
+      margin: 20px auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      max-width: 300px; /* Adjust the width as needed */
+      background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to the weather info */
+    }
+  </style>
+</head>
+<body>
+  <h1>Weather Information</h1>
+  <% if (weatherData) { %>
+    <div class="weather-info">
+      <p>City: <%= weatherData.location.name %></p>
+      <p>Temperature: <%= weatherData.current.temp_c %>°C</p>
+      <p>Condition: <%= weatherData.current.condition.text %></p>
+    </div>
+  <% } else { %>
+    <p>No weather data available.</p>
+  <% } %>
+  <a href="/">Back to Home</a>
+</body>
+</html>
